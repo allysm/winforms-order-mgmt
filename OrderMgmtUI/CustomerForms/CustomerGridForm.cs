@@ -127,8 +127,9 @@ namespace OrderMgmtUI.CustomerForms
             // Set data source
             this.RefreshDataSource();
 
-            // Adjust column widths
+            // Adjust row and column widths
             this.gvCustomers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            this.gvCustomers.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             // Remove focus on controls
             this.ActiveControl = null;
