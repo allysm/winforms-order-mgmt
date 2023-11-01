@@ -136,9 +136,11 @@ namespace OrderMgmtUI.OrderForms
 
         private void CustomerGridForm_Shown(object sender, EventArgs e)
         {
-            // Adjust column widths
+            // Adjust column and row widths
             this.gvOrderDetails.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             this.gvOrders.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            this.gvOrderDetails.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            this.gvOrders.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             // Remove focus on controls
             this.ActiveControl = null;
